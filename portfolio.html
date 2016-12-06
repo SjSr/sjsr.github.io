@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sjsr.github.io | My Portfolio</title>
+	<link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style1.css"/>
+	<link href="js/animated.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script type="text/javascript" src="js/myjs.js"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.0.3.mini.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 15,
+                $SpacingX: 3,
+                $SpacingY: 3,
+                $Align: 455
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 980);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        .jssora07l, .jssora07r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background: url('img/a07.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora07l { background-position: -5px -35px; }
+        .jssora07r { background-position: -65px -35px; }
+        .jssora07l:hover { background-position: -125px -35px; }
+        .jssora07r:hover { background-position: -185px -35px; }
+        .jssora07l.jssora07ldn { background-position: -245px -35px; }
+        .jssora07r.jssora07rdn { background-position: -305px -35px; }
+        .jssora07l.jssora07lds { background-position: -5px -35px; opacity: .3; pointer-events: none; }
+        .jssora07r.jssora07rds { background-position: -65px -35px; opacity: .3; pointer-events: none; }
+        /* jssor slider thumbnail navigator skin 04 css *//*.jssort04 .p            (normal).jssort04 .p:hover      (normal mouseover).jssort04 .pav          (active).jssort04 .pav:hover    (active mouseover).jssort04 .pdn          (mousedown)*/.jssort04 .p {    position: absolute;    top: 0;    left: 0;    width: 62px;    height: 32px;}.jssort04 .t {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.jssort04 .w, .jssort04 .pav:hover .w {    position: absolute;    width: 60px;    height: 30px;    border: #0099FF 1px solid;    box-sizing: content-box;}.jssort04 .pdn .w, .jssort04 .pav .w {    border-style: dashed;}.jssort04 .c {    position: absolute;    top: 0;    left: 0;    width: 62px;    height: 32px;    background-color: #000;    filter: alpha(opacity=45);    opacity: .45;    transition: opacity .6s;    -moz-transition: opacity .6s;    -webkit-transition: opacity .6s;    -o-transition: opacity .6s;}.jssort04 .p:hover .c, .jssort04 .pav .c {    filter: alpha(opacity=0);    opacity: 0;}.jssort04 .p:hover .c {    transition: none;    -moz-transition: none;    -webkit-transition: none;    -o-transition: none;}* html .jssort04 .w {    width /**/: 62px;    height /**/: 32px;}
+    </style>
+    
+    
+    
+</head>
+
+<body>
+  <div id="wrapper">
+	<div id="wrapper">
+    	<div class="container">
+    		<div class="header2">
+                <div id="logo">
+                	<a href="index.html"><h1 class="tlt">Shuraj Shampang</h1></a>
+                </div>
+                <div id="portfolio">
+                	<span style="float:left; margin-left:5px;color:rgba(255,255,255,1);font-family:'Myriad Pro'; font-size:18px">
+                    	My Portfolio
+                    </span>  
+                    <span style="float:right; margin-right:5px;color:rgba(255,255,255,1);font-family:'Myriad Pro';font-size:18px">
+                     	<a href="index.html" style="color:rgba(255,255,255,1);">Back</a>
+                    </span>
+                </div>
+                <!-- view all portfolio -->
+                <div id="allportfolio">
+           		
+                 <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:400px;overflow:hidden;visibility:hidden;background:url('img/main_bg.jpg') 50% 50% no-repeat .8;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 400px; overflow: hidden;">
+            <div data-p="172.50">
+                <div style="position:absolute;top:10px;left:10px;width:480px;height:300px;z-index:0;font-family:Arial, Verdana;font-size:12px;text-align:left;"><br />
+                    <span style="display: block; line-height: 1em; text-transform: uppercase; font-size: 35px; color: #FFFFFF;">Nepali Date Java Libary</span><br /><br /><br />
+                   
+                    <span style="display: block; line-height: 1.1em; font-size: 1.5em; color: #FFFFFF;">
+                                                       Nepali-Date-Java-Libary is a repository for converting A.D. Date to B.S. Date etc.
+                                                    
+                    </span><br /><br />
+                    <a href="https://github.com/SjSr/Nepali-Date-Java-Libary" target="_blank">
+                        <img border="0" alt="auction slider" width="215" height="50" src="img/find-out-more-bt.png" style="border-radius:10px;" />
+                    </a>
+                </div>
+                <img style="position:absolute;top:23px;left:480px;width:500px;height:300px;z-index:0;" src="img/s2.png" />
+                <img data-u="thumb" src="img/s2t.jpg" />
+            </div>
+            <div data-p="172.50" style="display: none;">
+                <div style="position:absolute;top:10px;left:10px;width:480px;height:300px;z-index:0;font-family:Arial, Verdana;font-size:12px;text-align:left;">
+                    <span style="display: block; line-height: 1em; text-transform: uppercase; font-size: 35px;
+                                color: #FFFFFF;">PersonalContactManager</span><br /><br />
+                    <span style="display: block; line-height: 1.1em; font-size: 1.5em; color: #FFFFFF;">
+                       PersonalContactManager is a repository for record friend and family information etc.
+                                                    
+                    </span><br /><br />
+                    <a href="https://github.com/SjSr/PersonalContactManager" target="_blank">
+                        <img border="0" alt="ebay slideshow" width="215" height="50" src="img/find-out-more-bt.png" style="border-radius:10px;"/>
+                    </a>
+                </div>
+                <img style="position:absolute;top:23px;left:480px;width:500px;height:300px;z-index:0;" src="img/s3.png" />
+                <img data-u="thumb" src="img/s3t.jpg" />
+            </div>
+            <div data-p="172.50" style="display: none;">
+                <div style="position:absolute;top:10px;left:10px;width:480px;height:300px;z-index:0;font-family:Arial, Verdana;font-size:12px;text-align:left;">
+                    <span style="display: block; line-height: 1em; text-transform: uppercase; font-size: 35px;
+    color: #FFFFFF;">Online Shoping SpringMaven</span><br />
+                     <span style="display: block; line-height: 1.1em; font-size: 1.5em; color: #FFFFFF;">
+                      Online Shoping SpringMaven is a repository for shop form home and in this  spring MVC, hibernate, log4j, maven used .
+                                                    
+                    </span><br /><br />
+                    <a href="https://github.com/SjSr/SpringMavenPractice" target="_blank">
+                        <img border="0" alt="listing slider" width="215" height="50" src="img/find-out-more-bt.png" style="border-radius:10px;"/>
+                    </a>
+                </div>
+                <img style="position:absolute;top:23px;left:480px;width:500px;height:300px;z-index:0;" src="img/s4.png" />
+                <img data-u="thumb" src="img/s4t.jpg" />
+            </div>
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort04" style="position:absolute;left:0px;bottom:0px;width:980px;height:60px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+       
+    </div>
+    <!-- #endregion Jssor Slider End -->
+                
+   </div>
+                <!-- end portfolio -->
+                 <div id="footer1">
+                  <h3>Designed By Shuraj Sj</h3>
+                </div>
+           </div>
+        </div>
+    </div>
+ </div>  
+     
+	 
+	  <!-- Animate text -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.textillate.js" type="text/javascript"></script>
+    <script src="js/jquery.lettering.js" type="text/javascript"></script>
+    <script src="js/jquery.fittext.js" type="text/javascript"></script>
+    <script type="text/javascript">
+         $( document ).ready(function() {
+             $('.tlt').textillate({
+              minDisplayTime: 1800, 
+       in: {
+           effect: 'bounceInDown',
+                     delayScale: 2,                     
+                     delay: 50,                     
+                     sequence:true
+
+       },
+       out: {
+             effect: 'hinge',             
+             shuffle: true
+       },
+       loop: true
+       });
+       
+     });
+    </script>	 
+	 
+</body>
+</html>
